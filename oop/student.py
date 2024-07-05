@@ -1,3 +1,5 @@
+class student:
+    ...
 def main():
     student=get_student()
     if student["name"]=="Padma":
