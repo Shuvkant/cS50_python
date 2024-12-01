@@ -1,4 +1,3 @@
-
 import random
 
 # List of random fortunes
