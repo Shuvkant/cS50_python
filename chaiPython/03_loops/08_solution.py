@@ -11,9 +11,6 @@ while(1):
         if(number<0 or number==1):
             print(f"{number} is not  prime number")
             return False
-        if(number==2):
-            print(f"{number} is  prime number")
-            return True
         if(number%2==0):
             print(f"{number} is not prime number")
             return False
