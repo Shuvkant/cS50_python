@@ -1,4 +1,3 @@
-
 """
 3. Inheritance
 Problem: Create an ElectricCar class that inherits from the Car class and has an additional
@@ -7,24 +6,23 @@ attribute battery_size.
 
 
 class Car:
-    def __init__(self, make, model, year):
-        self.make = make
+    def __init__(self, brand, model):
+        self.brand = brand
         self.model = model
-        self.year = year
 
-    def get_description(self):
-        return f"{self.year} {self.make} {self.model}"
+    def printname(self):
+        print(self.brand, self.model)
 
 
 class ElectricCar(Car):
-    def __init__(self, make, model, year, battery_size):
-        super().__init__(make, model, year)
+    def __init__(self, brand, model, battery_size):
+        self.brand = brand
+        self.model = model
         self.battery_size = battery_size
 
-    def get_battery_info(self):
-        return f"This car has a {self.battery_size}-kWh battery."
+    def printelectric(self):
+        print(self.brand, self.model, self.battery_size)
 
 
-my_electric_car = ElectricCar("Tesla", "Model S", 2024, 100)
-print(my_electric_car.get_description())  # Output: 2024 Tesla Model S
-print(my_electric_car.get_battery_info())
+x = ElectricCar(brand="rabxf", model="gsfgs", battery_size="50")
+x.printelectric()
